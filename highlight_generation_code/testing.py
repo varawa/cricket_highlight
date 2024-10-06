@@ -11,8 +11,8 @@ def locate_scoreboard(frame):
     height, width = frame.shape[:2]
     top = int(height * 0.93)
     bottom = int(height * 0.97)
-    left = int(width * 0.07)
-    right = int(width * 0.30)
+    left = int(width * 0.13)
+    right = int(width * 0.19)
     return (top, bottom, left, right)
 
 # Function to apply OCR to extract the score from the scoreboard region
@@ -109,6 +109,6 @@ def extract_highlight_videos(video_path, output_folder):
         print("No highlights detected.")
 
 # Usage
-video_path = 'test.mp4'  # Replace with your full video path
-output_folder = 'extracted_highlights'  # Replace with your desired output folder
+video_path = 'video_path'  # Replace with your full video path
+output_folder = 'output_folder'  # Replace with your desired output folder
 extract_highlight_videos(video_path, output_folder)
